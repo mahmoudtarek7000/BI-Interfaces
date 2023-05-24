@@ -1,11 +1,13 @@
 import { Observable } from "rxjs";
 import {BIObservable} from "./observable";
+import { FormGroup } from "@angular/forms";
 
 export interface IGrid {
   DataService: any,
   GridData: Observable<any>,
   Columns: Object,
   Key: string,
+  CurrentSelectRow: FormGroup; 
   SelectedRowChanged: () => void;
   BeforeAction: () => void;
   AddRow: () => void;
