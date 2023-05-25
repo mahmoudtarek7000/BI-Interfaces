@@ -8,7 +8,6 @@ export interface IGrid {
   Columns: Object,
   Key: string,
   CurrentSelectRow: FormGroup; 
-  SelectedRowChanged: () => void;
   BeforeAction: () => void;
   AddRow: () => void;
   DeleteRow: () => void;
