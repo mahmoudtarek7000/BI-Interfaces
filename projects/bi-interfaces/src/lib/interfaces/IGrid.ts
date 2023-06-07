@@ -6,7 +6,6 @@ export interface IGrid {
   DataService: any,
   GridData: Observable<any>,
   Columns: Object,
-  Key: string,
   CurrentSelectRow: FormGroup; 
   StopSave: Subject<boolean>;
   CreatedItemArray: Array<Object>;

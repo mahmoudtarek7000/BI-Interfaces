@@ -3,4 +3,6 @@ export interface INav {
   DeleteRow(): void;
   Cancel(): void;
   Save(): void;
+  Info(): void;
+  Close(): void;
 }
