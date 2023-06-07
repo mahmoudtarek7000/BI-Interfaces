@@ -1,5 +1,4 @@
 export enum DataSourceType {
-    CLIENTSIDE = "ClientSide",
-    SERVERSIDE = "ServerSide"
+    OData = "OData",
+    api = "api"
   }
-  
