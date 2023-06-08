@@ -4,7 +4,7 @@ export interface IColumns {
   Validators: ValidatorFn | null;
   Name: string;
   DisplayName: string;
-  DataType: DataTypes;
+  DataType: any;
   IsEditable: boolean;
   IsFilterable: boolean;
   DefaultValue: string | null;

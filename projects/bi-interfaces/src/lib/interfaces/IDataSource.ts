@@ -4,13 +4,18 @@ import { DataTypes } from "../enums/DataType";
 import { Observable } from "rxjs";
 
 export interface IDataSource {
-    Params: string;
+  Params: {
+    Name: string,
+    Operator: string,
+    value: string,
+    DataType: any,
+  }[];
     Key: string;
-    Columns: {
-        Name: string,
-        DataType: DataTypes,
-    }[];
-    Type: DataSourceType;
+  Columns: {
+    Name: string,
+    DataType: any,
+  }[];
+  Type: any;
     IsClientSideFilter: boolean;
     data: any[];
     edit(data: any, id: string): Observable<any>;
