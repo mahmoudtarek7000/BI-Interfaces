@@ -11,4 +11,9 @@ export interface IColumns {
   controlType: string;
   viewCellStyle: string;
   IsVisible: boolean;
+  lookupTemplate?: {
+    Key: string | undefined;
+    ID: string | undefined;
+    DataSource: any
+  }
 }
