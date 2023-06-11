@@ -8,9 +8,11 @@ export interface IGrid {
   Columns: Object,
   CurrentSelectRow: FormGroup; 
   StopSave: Subject<boolean>;
+  StopDelete: Subject<boolean>;
   CreatedItemArray: Array<Object>;
   UpdatedItemArray: Array<Object>;
-  BeforeAction: () => void;
+  BeforeActionSave: () => void;
+  BeforeActionDelete: () => void;
   AddRow: () => void;
   DeleteRow: () => void;
   Cancel: () => void;
