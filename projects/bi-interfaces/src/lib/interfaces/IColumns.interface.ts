@@ -1,6 +1,7 @@
 import { ValidatorFn } from '@angular/forms';
 import { DataTypes } from '../enums/DataType';
 export interface IColumns {
+  DomID: string | undefined;
   Validators: ValidatorFn | null;
   Name: string;
   DisplayName: string;

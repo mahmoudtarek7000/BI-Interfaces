@@ -6,7 +6,8 @@ export interface IGrid {
   DataService: any,
   GridData: Observable<any>,
   Columns: Object,
-  CurrentSelectRow: FormGroup; 
+  CurrentSelectRow: FormGroup;
+  DomID: string | undefined;
   StopSave: Subject<boolean>;
   StopDelete: Subject<boolean>;
   CreatedItemArray: Array<Object>;
